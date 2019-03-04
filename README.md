@@ -1,2 +1,2 @@
 # C-project
-This is just An overview which i am plannibg to build on.
+This is just an overview which i am planning to build on.

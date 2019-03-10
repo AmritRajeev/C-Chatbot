@@ -5,27 +5,61 @@
 
 void main()
 {
-char name[50];
-int in,t=1;
+char name[50],read[50];
+char url[],song[];
+int in,t=1,game;
+label:
 while(t!=2){
-printf("Hello!! Welcome My name is JARVIS and what's your name?");
-scanf("%s",&name);
-printf("Hello %s , What whould you like to do today? '/n'" );
-pritnf("Oh and don't forget to be connected to the internet")
-printf("Need help !! Here is what you can do ");
-printf("1) A quick fact check '/n' 2)Play a game3  '\n' 3)Google Some thing 4)Play some song 5)Simply chat 6)Exit ");
-scanf("%d".&in);
-switch (in){
-    case '1'{}
-    case '2'{}
-    case '3'{}
-    case '4'{}
-    case '5'{}
-    case '6' {
-            printf("That's Sad Let's Talk again later ");
-            i++;
-            break ;  }
-            }
-    break;
-           }
+    printf("Hello!! Welcome My name is JARVIS and what's your name?");
+    scanf("%s",&name);
+    printf("Hello %s , What whould you like to do today? '/n'",name);
+    pritnf("Oh and don't forget to be connected to the internet");
+    printf("Need help !! Here is what you can do '\n'");
+    printf("1) A quick fact check '/n' 2)Play a game '\n' 3)Read about something '\n'4)Play some song '\n'5)Simply chat '\n'6)Exit '/n'");
+    scanf("%d".&in);
+    if(in=='1'){
+
+                }
+    else if(in=='2'){
+            printf("What game would you like to play?");
+            printf(" 1)Snake game 2)Tic Tac Toe");
+            scanf("%d",&game);
+            if(game=='1')
+                    system("open https://www.google.com/search?source=hp&ei=W3qEXPzjAuDdz7sPs-6o0Ag&q=snake+game&oq=snake+&gs_l=psy-ab.1.1.0l10.185.3316..4988...1.0..0.240.1270.0j4j3......0....1..gws-wiz.....0..0i131.FFQuMhYT-DA");
+            else if (game=='2')
+                    system("open https://www.google.com/search?source=hp&ei=iHmEXJOJIOTaz7sP8t2aiA8&q=tic+tac+toe&oq=tic+t&gs_l=psy-ab.1.1.0l2j0i131j0l2j0i10j0l2j0i10j0.386.5357..8138...0.0..0.172.1161.0j7......0....1..gws-wiz.....0..0i7i30.UnKMPDxIcoA");
+
+            else
+                goto label;
+                    }
+    else if (in=='3'){
+            print("What would You like to read about");
+            scanf("%s",&read);
+            url ="https://en.wikipedia.org/wiki/";
+            url = strcat(url,read);
+            system ("open url");
+            goto label;
+                        }
+    else if (n=='4'){
+            printf("What song whould you like to hear?");
+            scanf("%s",&song);
+            url="https://www.youtube.com/results?search_query=";
+            url=strcat("url,song");
+            system("open url");
+            goto label;
+
+                    }
+    else if (n=='5'){
+
+
+                    }
+    else
+            printf("Thank you for your time!!Hope you have a nice day !!");
+            printf("Please come again");
+            t=2;
+            break;
+
+
+}
+
 }

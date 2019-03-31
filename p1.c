@@ -13,7 +13,7 @@ while(t!=2){
     printf("Hello!! Welcome My name is JARVIS and what's your name?");
     scanf("%s",&name);
     printf("Hello %s , What whould you like to do today? '/n'",name);
-    pritnf("Oh and don't forget to be connected to the internet");
+    printf("Oh and don't forget to be connected to the internet");
     printf("Need help !! Here is what you can do '\n'");
     printf("1) A quick fact check '/n' 2)Play a game '\n' 3)Read about something '\n'4)Play some song '\n'5)Simply chat '\n'6)Exit '\n'");
     scanf("%d",&in);

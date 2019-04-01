@@ -11,10 +11,10 @@ int in,t=1,game;
 while(t!=2){
     printf("Hello!! Welcome My name is JARVIS and what's your name?");
     scanf("%s",name);
-    printf("Hello %s , What whould you like to do today? '\n'",name);
-    printf("Oh and don't forget to be connected to the internet '\n' ");
-    printf("Need help !! Here is what you can do '\n'");
-    printf("1) A quick fact check '/n' 2)Play a game '\n' 3)Read about something '\n'4)Play some song '\n'5)Simply chat '\n'6)Exit '\n'");
+    printf("Hello %s , What whould you like to do today? \n",name);
+    printf("Oh and don't forget to be connected to the internet \n ");
+    printf("Need help !! Here is what you can do \n");
+    printf("1) A quick fact check \n 2)Play a game \n 3)Read about something \n4)Play some song \n5)Simply chat \n6)Exit \n");
     scanf("%d",&in);
     if(in==1){
                     printf("this is not done");
@@ -35,7 +35,6 @@ while(t!=2){
             strcpy(url,"https://en.wikipedia.org/wiki/");
             strcat(url,read);
             system ("cmd /c start url/");
-            goto label;
                         }
     else if (in==4){
             printf("What song whould you like to hear?");
